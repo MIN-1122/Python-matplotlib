@@ -3,11 +3,14 @@ plt.rc("font",family="Microsoft YaHei")
 
 import csv
 file=open("data.csv",encoding="cp950")
+
 reader=csv.reader(file)
 header=next(reader)
+
 print("標頭",header) #讀取第一列
 x=[]    #預期年度資料
 y=[]    #預期薪資資料
+    
 for row in reader:
     print("每列的資料",row)
     x.append(int(row[0]))
