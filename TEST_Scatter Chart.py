@@ -1,5 +1,3 @@
-from email import header
-
 import matplotlib.pyplot as plt
 import csv
 plt.rc("font",family="Microsoft YaHei")
