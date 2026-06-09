@@ -1,3 +1,5 @@
+from email import header
+
 import matplotlib.pyplot as plt
 import csv
 plt.rc("font",family="Microsoft YaHei")
@@ -19,6 +21,9 @@ for row in reader:
 
 plt.scatter(data["男"]["x"],data["男"]["y"],label="男生")
 plt.scatter(data["女"]["x"],data["女"]["y"],label="女生")
+
+plt.xlabel("身高")
+plt.ylabel("體重")
 
 plt.legend()
 plt.show()

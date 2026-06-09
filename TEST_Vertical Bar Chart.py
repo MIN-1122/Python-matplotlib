@@ -1,3 +1,5 @@
+from email import header
+
 import matplotlib.pyplot as plt
 plt.rc("font",family="Microsoft YaHei")
 
@@ -9,9 +11,6 @@ plt.bar(
     width=0.5,         #width設定參數寬度
     color="red"
 )
-
-plt.xlabel("x軸")
-plt.ylabel("y軸")
 
 plt.legend()
 plt.show()
